@@ -1,7 +1,0 @@
-{
-  "name": "meets-new",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
