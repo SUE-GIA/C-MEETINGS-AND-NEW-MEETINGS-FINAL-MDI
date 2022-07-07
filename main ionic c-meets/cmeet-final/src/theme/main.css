@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #798fa8 !important;
+  overflow-y: auto !important;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f8ff;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a .navright
+{
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: #798fa8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: rgb(255, 253, 253);
+}
+
+.container {
+  display: block !important;
+  width: 80% !important;
+  height: fit-content !important;
+  margin-top: 30px !important;
+  padding-bottom: 20px !important;
+  background-color: aliceblue !important;
+  border-radius: 5px !important;
+}
+
+.slides{
+  width: 64%;
+  height:400px;
+  float:left;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  border: 3px solid #335985;
+  border-radius: 5px;
+  box-shadow: 0 0 5px (53, 61, 80);
+}
+
+.small video{
+  object-fit:contain;
+  height: 100%;
+  width: 100%;
+}
+
+.container h2 {
+  color: #798fa8;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+.container .small {
+  display: block;
+  position: absolute;
+  width: 10%;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 1px solid #37383a;
+  box-shadow: 0 0 10px rgb(53, 61, 80);
+}
+
+.small:hover {
+  -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(12, 12, 12);
+  opacity: 90%;
+}
+
+.image:hover {
+  -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+  -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(12, 12, 12);
+}
+
+/*------------ CHAT - DESPO ------------*/
+.interactions_container {
+  border: 2px solid black;
+  padding: 5px;
+  float: right;
+  width: 30%;
+  /*overflow: auto;*/
+  
+}
+
+.event-container {
+  display: flexbox;
+  border-bottom: 2px solid black;
+}
+
+.chat-container {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+#username {
+  font-weight: bold;
+  color: rgb(81, 81, 184);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chat-container #content {
+  color: black;
+  padding: 5px;
+  padding-top: 20px;
+}
+
+#timestamp {
+  color: black;
+  padding: 5px;
+}
+
+.chat-container img {
+  width: 40px;
+  height: 50px;
+  padding: 1px;
+  border-radius: 30px;
+}
+
+.break-row {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.event-container text {
+  padding: 5px;
+}
+
+.chatbox {
+  margin-top: 10px;
+}
+
+.chatbox textarea {
+  width: 100%;
+}
+
+.tab-content {
+  margin-top: 15px;
+}
+
+.pills-container a {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.activitycontainer{
+  overflow: auto;
+  height: 150px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: aliceblue;
+  color: #798fa8;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #798fa8;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: aliceblue;}
+
+
+@media only screen and (max-width: 1280px) {
+  html{
+    overflow-y: auto;
+
+  }
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .slides {
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container .small {
+    width: 20%;
+    margin-top: 20px;
+    float: center;
+  }
+  .interactions_container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  .container .small {
+    width: 30% !important;
+    margin-top: 20px;
+    margin-left: 0px;
+    opacity: 0.3;
+  }
+  .small:hover {
+    opacity: 1;
+  }
+  .slides {
+    width: 100% !important;
+  }
+  .interactions_container {
+    margin: 1px;
+    padding: 5px;
+    float: right;
+    width: 100%;
+    height: 60%;
+  }
+}
